@@ -3,34 +3,42 @@
 <head>
     <link href="styles.css" rel="stylesheet">
     <script src="script.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
+<body id="body">
     <div class="calculator-grid">
         <div class="output">
-            <div data-previous-operand class="previous-operand"></div>
-            <div data-current-operand class="current-operand"></div>
+            <div id="previous" class="previous-operand"></div>
+            <div id="current" class="current-operand"></div>
         </div>
-        <button data-clear class="span-two">CLEAR</button>
-        <button data-delete>DEL</button>
-        <button data-operation>/</button>
-        <button data-number>1</button>
-        <button data-number>2</button>
-        <button data-number>3</button>
-        <button data-operation>*</button>
-        <button data-number>4</button>
-        <button data-number>5</button>
-        <button data-number>6</button>
-        <button data-operation>+</button>
-        <button data-number>7</button>
-        <button data-number>8</button>
-        <button data-number>9</button>
-        <button data-operation>-</button>
-        <button data-number>.</button>
-        <button data-number>0</button>
-        <button data-equals class="span-two">=</button>
+        <button id="clear" class="span-two">CLEAR</button>
+        <button id="delete">DEL</button>
+        <button id="divide">/</button>
+        <button id="one">1</button>
+        <button id="two">2</button>
+        <button id="three">3</button>
+        <button id="multiply">*</button>
+        <button id="four">4</button>
+        <button id="five">5</button>
+        <button id="six">6</button>
+        <button id="addition">+</button>
+        <button id="seven">7</button>
+        <button id="eight">8</button>
+        <button id="nine">9</button>
+        <button id="subtract">-</button>
+        <button id="decimal">.</button>
+        <button id="zero">0</button>
+        <button id="equals" class="span-two">=</button>
+    </div>
+    <div class="color-buttons">
+        <button id="aqua-splash">Aqua Splash</button>
+        <button id="warm-flame">Warm Flame</button>
+        <button id="fly-high">Fly-High</button>
+        <button id="plum-plate">Plum Plate</button>
+        <button id="mountain-rock">Mountain Rock</button>
     </div>
 </body>
 </html>
