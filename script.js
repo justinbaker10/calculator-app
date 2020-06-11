@@ -96,7 +96,9 @@ clickSubtract.addEventListener('click', function() {
 })
 
 clickEquals.addEventListener('click', function() {
-    let newEquation = parseInt(previous.innerHTML + current.innerHTML)
+    let newEquation = eval(previous.innerHTML + current.innerHTML)
+    current.innerHTML = newEquation
+    previous.innerHTML = ''
 })
 
 aquaSplash.addEventListener('click', function() {
